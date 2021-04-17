@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,f=0;
+    cin>>n;
+    f=n;
+    int r,sum=0;
+    
+    while(f!=0)
+    {
+        r=f%10;
+        sum=sum*10+r;
+        f=f/10;
+        
+    }
+    
+    
+    
+    if(sum==n)
+    {
+        cout<<"Polidrom as reverse is same as number"<<sum;
+    }
+    else
+    {
+        cout<<"not Polidrom"<<sum;
+    }
+    return 0;
+}
