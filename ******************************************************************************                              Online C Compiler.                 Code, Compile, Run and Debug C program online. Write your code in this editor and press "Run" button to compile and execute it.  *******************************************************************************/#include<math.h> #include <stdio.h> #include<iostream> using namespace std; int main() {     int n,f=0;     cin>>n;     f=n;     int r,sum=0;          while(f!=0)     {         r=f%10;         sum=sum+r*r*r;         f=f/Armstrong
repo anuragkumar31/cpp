@@ -1,0 +1,31 @@
+#include<math.h>
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,f=0;
+    cin>>n;
+    f=n;
+    int r,sum=0;
+    
+    while(f!=0)
+    {
+        r=f%10;
+        sum=sum+r*r*r;
+        f=f/10;
+        
+    }
+    
+    
+    
+    if(sum==n)
+    {
+        cout<<"ARmstrong no as number"<<sum;
+    }
+    else
+    {
+        cout<<"not Armstrong no"<<sum;
+    }
+    return 0;
+}
