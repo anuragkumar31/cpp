@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,r,hcf;
+    cin>>a>>b;
+    while(true)
+    {
+        hcf=b;
+        r=a%b;
+        b=r;
+        a=b;
+        if(b==0)
+        {
+            break;
+        }
+    }
+    cout<<"hcf is :"<<hcf;
+    
+    
+    
+    
+}
